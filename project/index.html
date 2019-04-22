@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        body {
+            height: 100%;
+        }
+        #app {
+            height: 100vh;
+            box-sizing: border-box;
+            padding: 466px 0;
+            background: url('./img/bg.png');
+            background-size: cover;
+        }
+        #app #imgBox {
+            width: 273px;
+            height: 278px;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+        #app img {
+            width: 273px;
+            height: 278px;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div id="imgBox"><img src="./img/play.png" alt="开始游戏"></div>
+    </div>
+    <script src="./js/Change the viewport.js"></script>
+    <script>
+        onload=function() {
+            //获取按钮元素
+            let btn = document.querySelector('#imgBox');
+            btn.addEventListener('click',function() {
+                location.href='two.html';
+            })
+        }
+    </script>
+</body>
+</html>

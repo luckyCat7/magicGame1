@@ -1,0 +1,109 @@
+.wrap{
+    position:relative;
+    box-sizing:border-box;
+    width:100vw;
+    height:100vh;
+    background-image:url('../img/bg-1.png'),url('../img/bg2.png');
+    background-size:cover;
+    padding-top:425px;
+    overflow: hidden;
+}
+.wrap .house{
+    display:flex;
+    width:100%;
+    justify-content: space-around;
+}
+.wrap .house li{
+    width:28%;
+    height:28vw;
+    transition: 0.5s;
+}
+.wrap .house li:first-child{
+    width:200px;
+    height:300px;
+    transition: 1s;
+    background:url('../img/labi-house.png') -69px -119px no-repeat;
+    background-size:157%;
+}
+.wrap .house li:nth-child(2){
+    width:200px;
+    height:300px;
+    transition: 1s;
+    background:url('../img/qianbi-house.png') -53px -41px no-repeat;
+    background-size:157% 150%;
+}
+.wrap .house li:nth-child(3){
+    width:200px;
+    height:300px;
+    transition: 1s;
+    background:url('../img/maobi-house.png') -66px 35px no-repeat;
+    background-size:157% 93%;
+}
+.wrap .house li img{
+    width:100%;
+    height:100%;
+}
+.wrap .pencil{
+    display:flex;
+    width:100%;
+    margin-top:100px;
+    align-items:flex-end;
+    justify-content: space-around;
+}
+.wrap .pencil li{
+    width:127px;
+    height:277px;
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+}
+.wrap .pencil li:first-child img{
+    width:127px;
+    height:277px;
+}
+.wrap .pencil li:nth-child(2){
+    width:142px;
+    height:315px;
+}
+.wrap .pencil li:nth-child(2) img{
+    width:142px;
+    height:315px;
+}
+.wrap .pencil li:nth-child(3){
+    width:128px;
+    height:280px;
+}
+.wrap .pencil li:nth-child(3) img{
+    width:128px;
+    height:280px;
+}
+.wrap .box{
+    opacity: 0;
+    z-index:-1;
+    transition:1s;
+    box-sizing:border-box;
+    position:absolute;
+    padding-top:500px;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    /* background:url('../img/qianAll.png'),url('../img/maoAll.png'),url('../img/laAll.png'),url('../img/all.png'),url('../img/allLight.png'); */
+    background-size:100%;
+    background-color:rgba(0,0,0,.8);
+}
+.wrap .box ul{
+    display:flex;
+    justify-content: center;
+    margin-top:138px;
+}
+.wrap .box ul li{
+    width:90px;
+    height:90px;
+    margin-right:8px;
+    border-radius:50%;
+}
+.wrap .box ul li a{
+    display:block;
+    width:100%;
+    height:100%;
+}
